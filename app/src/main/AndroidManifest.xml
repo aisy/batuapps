@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nyagenta.batuapps.batuapps">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- untuk spalsh screen-->
+        <!-- untuk spalshscreen-->
         <activity
             android:name="com.nyagenta.batuapps.batuapps.Splashscreen"
             android:label="@string/app_name"
