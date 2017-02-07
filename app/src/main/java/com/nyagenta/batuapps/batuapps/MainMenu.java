@@ -16,9 +16,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 //JSON
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 //memanggil library slider secara online
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
@@ -152,30 +149,37 @@ public class MainMenu extends AppCompatActivity
         }
     }
 
+
+    // ================================= Fungsi Apps bar ===========================================
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @SuppressWarnings("StatementWithEmptyBody")
 
+
+    //===================== Navigasi saat Item Terpilih ============================================
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
