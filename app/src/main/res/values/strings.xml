@@ -1,11 +1,22 @@
 <resources>
-    <string name="app_name">Batuapps</string>
+    <string name="app_name">Humas Batu</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!-- MENU-->
-    <string name="search">Pencarian</string>
-    <string name="string_hint">Cari Berita...</string>
     <string name="action_settings">Settings</string>
+
+    <!-- SEARCH -->
+    <string name="search">Pencarian</string>
+    <string name="search_hint">Cari Berita...</string>
+
+    <!-- SPINNER -->
+    <string-array name="spinner_array">
+        <item>Semua</item>
+        <item>Event</item>
+        <item>Gambar</item>
+        <item>Video</item>
+    </string-array>
+
 </resources>
